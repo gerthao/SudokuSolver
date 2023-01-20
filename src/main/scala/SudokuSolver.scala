@@ -6,7 +6,7 @@ class SudokuSolver:
   )
 
   private def calcStep(x: Int, y: Int)(s: Sudoku): Seq[Sudoku] =
-    LazyList(1 to 9: _*)
+    LazyList(1 to Sudoku.Length: _*)
       .filter(s.fitsInPlace(x, y))
       .map(s.set(x, y))
 

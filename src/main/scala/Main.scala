@@ -1,7 +1,6 @@
 import com.monovore.decline
 import cats.syntax.all.*
 import com.monovore.decline.{CommandApp, Opts}
-import scala.util.chaining._
 
 private val sudokuArgument: Opts[Sudoku] =
   Opts.argument[String]("sudoku")
